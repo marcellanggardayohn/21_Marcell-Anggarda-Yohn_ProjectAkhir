@@ -1,0 +1,92 @@
+/* ==========================
+      GLOBAL STYLING
+   ========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #222831, #393E46);
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================
+      NAVBAR (NEW INTEGRATED)
+   ========================== */
+
+header {
+    width: 100%;
+    background: #1f2428;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 14px 28px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header .brand {
+    font-size: 1.7rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+header .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Navbar Button Style */
+.right-nav .nav-btn {
+    padding: 6px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1.5px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+    white-space: nowrap;
+}
+
+.right-nav .nav-btn:hover {
+    background: #ffffff;
+    color: #1f2428;
+}
+
+
+
+/* ==========================
+            FOOTER
+   ========================== */
+
+footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    background: #222;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+footer a {
+    color: #f0b949;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

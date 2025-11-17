@@ -1,0 +1,212 @@
+/* ==========================
+      GLOBAL STYLING
+   ========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #222831, #393E46);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================
+      NAVBAR (NEW INTEGRATED)
+   ========================== */
+
+header {
+    width: 100%;
+    background: #1f2428;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 14px 28px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header .brand {
+    font-size: 1.7rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+header .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Navbar Button Style */
+.right-nav .nav-btn {
+    padding: 6px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1.5px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+    white-space: nowrap;
+}
+
+.right-nav .nav-btn:hover {
+    background: #ffffff;
+    color: #1f2428;
+}
+
+
+/* ==========================
+        JUMBOTRON
+   ========================== */
+
+.jumbotron {
+    background: url('JumbotronBG.jpg') center/cover no-repeat;
+    padding: 150px 20px;
+    margin-bottom: 40px;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+}
+
+.jumbotron p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 10px;
+}
+
+
+/* ==========================
+      IMPROVED CAROUSEL
+   ========================== */
+
+.carousel {
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-item img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(83%);
+    transition: 0.6s ease;
+}
+
+.carousel-item img:hover {
+    filter: brightness(95%);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 18px 22px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.carousel-caption h5 {
+    font-weight: 700;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* Control glow */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(0 0 5px black);
+}
+
+
+/* ==========================
+        CARD SECTION
+   ========================== */
+
+.col-md-4 {
+    overflow: visible;
+}
+
+.card {
+    border-radius: 14px;
+    overflow: visible !important;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    border: none;
+}
+
+.card img {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+
+/* ==========================
+          BUTTONS
+   ========================== */
+
+.btn-primary {
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ==========================
+            FOOTER
+   ========================== */
+
+footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    background: #222;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+footer a {
+    color: #f0b949;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
